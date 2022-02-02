@@ -9,7 +9,7 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
-
+sed -i 's/kmod-batman-adv +wpad-openssl/kmod-batman-adv/g' package/lean/luci-app-easymesh/Makefile
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
